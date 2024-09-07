@@ -34,7 +34,7 @@ function fetchWeatherDetails(location) {
             const timezone = data.location.tz_id;
             startClock(timezone);
         })
-        .catch(error => console.error('Error fetching the weather data:', error));
+        // .catch(error => console.error('Error fetching the weather data:', error));
 }
 
 function updateWeather(data) {
