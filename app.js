@@ -27,7 +27,7 @@ document.getElementById('search-btn').addEventListener('click', function () {
 
 function fetchWeatherDetails(location) {
     const apiKey = '7f2439ff7f92409a8a585110240709';
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=10`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=10`)
         .then(Response => Response.json())
         .then(data => {
             updateWeather(data);
