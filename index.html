@@ -11,45 +11,63 @@
 </head>
 
 <body>
+
   <video class="background-video" autoplay muted loop>
     <source src="video/2615418_Airplane Window View_Blue_1920x1080.mp4" type="video/mp4">
   </video>
+
   <div class="header">
     <hr>
     <span>
       <h1><b>WEATHER FORECAST</b></h1>
     </span>
   </div>
+
   <hr>
-  <div class="time" id="time"><span>
-      <p>1:35:10PM</p>
-    </span>
-  </div>
-  <div class="date" id="date"><span>
-      <p>saturday,september/7/2024</p>
-    </span>
-  </div>
-  <div class="cityname" id="cityName"><span>
-      <p>kurunegala</p>
-    </span></div>
 
-  <div style="display: flex; justify-content: center; align-items: center; height: 10vh;">
-    <form class="w-auto me-9">
-      <input type="search" class="form-control" placeholder="search..." aria-label="search" id="searchbar-text" />
-    </form>
-    <button type="button" class="btn btn-info search-button" id="search-btn" style="margin-left: 2%;">Search</button>
+  <div class="container mt-4 mb-3">
+    <div class="row">
+      <div class="time" id="time"><span>
+          <p>1:35:10PM</p>
+        </span>
+      </div>
+
+      <div class="date" id="date"><span>
+          <p>saturday,september/7/2024</p>
+        </span>
+      </div>
+
+      <div class="cityname" id="cityName"><span>
+          <p>kurunegala</p>
+        </span>
+
+      </div>
+      <div class="col-md-6">
+        <div style="display: flex; justify-content: center; align-items: center; height: 10vh;">
+          <form class="w-auto me-9">
+            <input type="search" class="form-control" placeholder="search..." aria-label="search" id="searchbar-text" />
+          </form>
+          <button type="button" class="btn btn-info search-button" id="search-btn"
+            style="margin-left: 2%;">Search</button>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="container">
+  <hr>
+
+
+  <div class="container mt-1">
     <div class="d-flex justify-content-between">
-      <div class="col-6 m-2 maincol">
+      <div class="col-md-6 col-sm-6 maincol">
         <div class="mt-3 cardcurrentwhether" style="margin-left: 23%;">
           <div class="row">
             <div>
               <p>Current whether <br></p>
-
+              
               <div class="d-flex">
-                <div ><img src="img/icons8-partly-cloudy-day-96.png" id="current-location-weather-img" alt="current-location-weather-img"></div>
+                <div><img src="img/icons8-partly-cloudy-day-96.png" id="current-location-weather-img"
+                    alt="current-location-weather-img"></div>
                 <div>
                   <p class="temp" id="current-location-temperature"><b>28°C</b></p>
                   <p class="forecast" id="forecast">mostly cloudy</p>
@@ -146,7 +164,7 @@
       </div>
 
 
-      <div class="col-6 m-2 maincol">
+      <div class="col-md-6 col-sm-6 maincol">
         <div class="alignment5 mt-3 ">
           <div class="row days10">
             <div>

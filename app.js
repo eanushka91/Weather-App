@@ -26,7 +26,7 @@ document.getElementById('search-btn').addEventListener('click', function () {
 });
 
 function fetchWeatherDetails(location) {
-    const apiKey = '7f2439ff7f92409a8a585110240709';
+    const apiKey = '4eefa132ef3046de858195634240410';
     fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=10`)
         .then(Response => Response.json())
         .then(data => {
@@ -34,7 +34,7 @@ function fetchWeatherDetails(location) {
             const timezone = data.location.tz_id;
             startClock(timezone);
         })
-        // .catch(error => console.error('Error fetching the weather data:', error));
+        
 }
 
 function updateWeather(data) {

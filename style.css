@@ -47,7 +47,7 @@
 
 .cardcurrentwhether{
     width: 55%;
-    height: 100%;
+    height: fit-content;
     margin: 2%;
     padding: 2%;
     border-radius: 10px;
